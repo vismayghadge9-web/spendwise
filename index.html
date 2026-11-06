@@ -104,6 +104,23 @@ tbody tr:last-child td{border-bottom:0}
  .right{gap:5px}
 }
 </style>
+  
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+
+<script>
+const SUPABASE_URL = "https://veohnfimonfmffmpfpya.supabase.co";
+
+const SUPABASE_PUBLISHABLE_KEY =
+  "sb_publishable_uqX-WIQn12VueEr2NXXjaA_OVJWaHXH";
+
+const supabaseClient = window.supabase.createClient(
+  SUPABASE_URL,
+  SUPABASE_PUBLISHABLE_KEY
+);
+
+console.log("SpendWise Supabase connected!");
+</script>
+  
 </head>
 
 <body>
